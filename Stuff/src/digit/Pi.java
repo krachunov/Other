@@ -6,12 +6,12 @@ import java.math.BigInteger;
 public class Pi {
 	public static void main(String[] args) {
 
-		final int N = 1000; // # of terms
+		final int N = 1000;
 		final int digitAfterDot = 1000;
 
-		BigDecimal sum = new BigDecimal(0); // final sum
-		BigDecimal term = new BigDecimal(0); // term without sign
-		BigDecimal sign = new BigDecimal(1.0); // sign on each term
+		BigDecimal sum = new BigDecimal(0); 
+		BigDecimal term = new BigDecimal(0); 
+		BigDecimal sign = new BigDecimal(1.0); 
 
 		BigDecimal one = new BigDecimal(1.0);
 		BigDecimal two = new BigDecimal(2.0);
