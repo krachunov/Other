@@ -5,6 +5,8 @@ import java.math.BigInteger;
 
 public class Pi {
 	public static void main(String[] args) {
+		
+	
 
 		final int N = 1000;
 		final int digitAfterDot = 1000;
@@ -33,8 +35,8 @@ public class Pi {
 		BigDecimal four = new BigDecimal(4);
 		pi = sum.multiply(four);
 
-		System.out.println("Calculated pi: " + pi);
-		System.out.println("Actual pi: " + Math.PI);
+		System.out.println("pi: " + pi);
+	
 	}
 
 }
