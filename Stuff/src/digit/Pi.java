@@ -2,14 +2,17 @@ package digit;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.util.Scanner;
 
 public class Pi {
 	public static void main(String[] args) {
 		
 	
-
+		System.out.println("Enter the number of digit after dot");
+		Scanner sc = new Scanner(System.in);
 		final int N = 1000;
-		final int digitAfterDot = 1000;
+		final int digitAfterDot = sc.nextInt();
+		sc.close();
 
 		BigDecimal sum = new BigDecimal(0); 
 		BigDecimal term = new BigDecimal(0); 
