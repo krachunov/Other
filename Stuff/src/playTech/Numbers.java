@@ -1,5 +1,8 @@
 package playTech;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Numbers {
 	public static int fibonachiNum(int n) {
 		int sum = 0;
@@ -13,14 +16,45 @@ public class Numbers {
 			fibSecond += fibFirst;
 			fibFirst = temp;
 			sum += fibSecond;
-
 		}
 		return sum;
+	}
 
+	public static int numSum(int n) {
+		int m1 = 3;
+		int m2 = 5;
+		int sum = 0;
+		List<Integer> listNumbers = new ArrayList<>();
+		for (int i = 0; i < n; i++) {
+			listNumbers.add(i);
+		}
+		for (Integer integer : listNumbers) {
+			if (integer % m1 == 0 || integer % m2 == 0) {
+				sum += integer;
+			}
+		}
+
+		return sum;
+	}
+
+
+	public static double round(double num) {
+		int current = (int) num;
+		double roundenNum = num - current;
+		if (roundenNum >= 0.50) {
+			return ++current;
+		} else {
+			return current;
+		}
 	}
 
 	public static void main(String[] args) {
 		int fibonachiNum = fibonachiNum(5);
 		System.out.println(fibonachiNum);
+
+		System.out.println(numSum(10));
+
+		System.out.println(round(12.49));
+
 	}
 }
