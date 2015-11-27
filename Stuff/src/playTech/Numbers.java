@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Numbers {
+	// Find sum of fibonachi num.
 	public static int fibonachiNum(int n) {
 		int sum = 0;
 		int fibFirst = 1;
@@ -37,7 +38,7 @@ public class Numbers {
 		return sum;
 	}
 
-
+	// Rounded num if num is 12.53 -> 13 if num is 12.49->12
 	public static double round(double num) {
 		int current = (int) num;
 		double roundenNum = num - current;
@@ -49,8 +50,8 @@ public class Numbers {
 	}
 
 	public static void main(String[] args) {
-		int fibonachiNum = fibonachiNum(5);
-		System.out.println(fibonachiNum);
+
+		System.out.println(fibonachiNum(5));
 
 		System.out.println(numSum(10));
 
