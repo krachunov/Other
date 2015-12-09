@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class Pi {
+public class Pi implements TestInterface{
 	public static void main(String[] args) {
 		
 	
@@ -40,6 +40,12 @@ public class Pi {
 
 		System.out.println("pi: " + pi);
 	
+	}
+
+	@Override
+	public void someMethod() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
